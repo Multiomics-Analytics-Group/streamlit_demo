@@ -1,4 +1,13 @@
-# Example Python package
+# Streamlit demo
+
+Install the app and further dependencies with:
+
+```bash
+pip install -r requirements.txt # also used for deployment on Streamlit Cloud
+streamlit run streamlit_app.py
+```
+
+## Example Python package (from template)
 
 All design principles are explained in the [developing.md](developing.md) file.
 The Python package template was created by Jakob Nybo Nissen and Henry Webel.
