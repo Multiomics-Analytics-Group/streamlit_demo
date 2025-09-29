@@ -2,6 +2,7 @@
 
 ```{include} ../README.md
 :start-line: 0
+:end-line: 9
 :relative-docs: docs
 :relative-images:
 ```
