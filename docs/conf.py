@@ -16,8 +16,8 @@ from importlib import metadata
 # -- Project information -----------------------------------------------------
 
 project = "python_package"
-copyright = "2025, First Last"
-author = "First Last"
+copyright = "2025, Henry Webel"
+author = "Henry Webel"
 PACKAGE_VERSION = metadata.version("python_package")
 version = PACKAGE_VERSION
 release = PACKAGE_VERSION
@@ -97,8 +97,8 @@ html_theme = "sphinx_book_theme"
 # html_logo = "_static/logo-wide.svg"
 # html_favicon = "_static/logo-square.svg"
 html_theme_options = {
-    "github_url": "https://github.com/RasmussenLab/python_package",
-    "repository_url": "https://github.com/RasmussenLab/python_package",
+    "github_url": "https://github.com/Multiomics-Analytics-Group/streamlit_demo",
+    "repository_url": "https://github.com/Multiomics-Analytics-Group/streamlit_demo",
     "repository_branch": "main",
     "home_page_in_toc": True,
     "path_to_docs": "docs",
