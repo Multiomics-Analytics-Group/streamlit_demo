@@ -29,7 +29,8 @@ jobs:
       - name: Build the site
         run: |
           cd docs
-          sphinx-build -nW --keep-going -b html .  _build
+          sphinx-apidoc --force --implicit-namespaces --module-first -o reference ../src/python_package
+          sphinx-build -n --keep-going -b html .  _build
 
       - name: Save to gh-pages
         # # if: ${{ github.ref == 'refs/heads/main' }}
