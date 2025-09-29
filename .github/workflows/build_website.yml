@@ -28,6 +28,7 @@ jobs:
 
       - name: Build the site
         run: |
+          cd docs
           sphinx-build -nW --keep-going -b html .  _build
 
       - name: Save to gh-pages
@@ -35,4 +36,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_build
+          publish_dir: ./docs/_build
