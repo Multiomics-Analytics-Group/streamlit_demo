@@ -6,7 +6,7 @@ import streamlit as st
 st.title("Streamlit App Example")
 
 st.write(
-"""
+    """
 Streamlit runs from top to bottom, executing all code on each interaction.
 
 - streamlit is fast and simple to prototype
@@ -16,13 +16,15 @@ Streamlit runs from top to bottom, executing all code on each interaction.
 - user interactions with widgets cause a full rerun of the script
 - user-data upload makes things even more tricky
 """
-    )
+)
 
 with st.echo():
     st.button("Click me")
     with st.spinner("Loading data ..."):
         sleep(5)
-st.write("This takes a while to load...simulating a heavy computation or IO process. But it works!")
+st.write(
+    "This takes a while to load...simulating a heavy computation or IO process. But it works!"
+)
 
 sleep(2)
 
@@ -54,5 +56,3 @@ with st.echo():
     for i in range(100):
         my_bar.progress(i + 1, text=progress_text)
         sleep(0.1)
-
-    
