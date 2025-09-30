@@ -49,9 +49,3 @@ reference/python_package
 README
 developing
 ```
-
-## Indices and tables
-
-- [Index](genindex)
-- [Module Index](modindex)
-- [Search](search)
