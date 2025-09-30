@@ -15,7 +15,7 @@ from importlib import metadata
 
 # -- Project information -----------------------------------------------------
 
-project = "python_package"
+project = "Streamlit Demo"
 copyright = "2025, Henry Webel"
 author = "Henry Webel"
 PACKAGE_VERSION = metadata.version("python_package")
