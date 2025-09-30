@@ -13,7 +13,7 @@ See documentation on how to
 [embed your app](https://docs.streamlit.io/deploy/streamlit-community-cloud/share-your-app/embed-your-app).
 
 <iframe
-  src="https://mona-demo-dev.streamlit.app?embed=true"
+  src="https://mona-demo.streamlit.app?embed=true"
   style="height: 450px; width: 100%;"
 ></iframe>
 
