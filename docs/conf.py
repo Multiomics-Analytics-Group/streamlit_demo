@@ -75,6 +75,7 @@ exclude_patterns = [
     ".DS_Store",
     "jupyter_execute",
     "conf.py",
+    "reference/modules.rst",
 ]
 
 
