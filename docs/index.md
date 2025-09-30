@@ -1,5 +1,3 @@
-# Python Package Documentation
-
 ```{include} ../README.md
 :start-line: 0
 :end-line: 9
@@ -51,9 +49,3 @@ reference/python_package
 README
 developing
 ```
-
-## Indices and tables
-
-- [Index](genindex)
-- [Module Index](modindex)
-- [Search](search)

@@ -15,7 +15,7 @@ from importlib import metadata
 
 # -- Project information -----------------------------------------------------
 
-project = "python_package"
+project = "Streamlit Demo"
 copyright = "2025, Henry Webel"
 author = "Henry Webel"
 PACKAGE_VERSION = metadata.version("python_package")
@@ -96,6 +96,9 @@ intersphinx_mapping = {
 # html_title = ""
 html_theme = "sphinx_book_theme"
 # html_logo = "_static/logo-wide.svg"
+html_logo = (
+    "https://images.seeklogo.com/logo-png/44/2/streamlit-logo-png_seeklogo-441815.png"
+)
 # html_favicon = "_static/logo-square.svg"
 html_theme_options = {
     "github_url": "https://github.com/Multiomics-Analytics-Group/streamlit_demo",
@@ -113,6 +116,11 @@ html_theme_options = {
         #     "notebook_interface": "jupyterlab",
     },
     "navigation_with_keys": False,
+    # https://pydata-sphinx-theme.readthedocs.io/en/latest/user_guide/branding.html
+    "logo": {
+        "link": "https://streamlit.io/",
+        "text": "Streamlit Demo",
+    },
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

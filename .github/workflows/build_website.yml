@@ -32,7 +32,7 @@ jobs:
           sphinx-build --nitpicky --fail-on-warning --keep-going -b html .  _build
 
       - name: Save to gh-pages
-        # # if: ${{ github.ref == 'refs/heads/main' }}
+        if: ${{ github.ref == 'refs/heads/main' }}
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
