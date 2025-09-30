@@ -18,16 +18,12 @@ See documentation on how to
 ></iframe>
 
 
-## MONA examples
-
-From Sebastian...
-
-<iframe
-  src="https://micw2graph.streamlit.app?embed=true"
-  style="height: 450px; width: 100%;"
-></iframe>
-
-
+```{toctree}
+:maxdepth: 2
+:caption: "Mona Streamlit apps"
+:hidden: true
+mona_apps
+```
 
 <!-- hidden toc trees for sidebar -->
 
