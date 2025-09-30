@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Design descriptions and details for the Python package template &#8212; python_package 0.1.dev1+g92e9f3717 documentation</title>
+    <title>Design descriptions and details for the Python package template &#8212; python_package 0.1.dev1+gdf1a7ea52 documentation</title>
   
   
   
@@ -38,7 +38,7 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=d47a0eb2"></script>
+    <script src="_static/documentation_options.js?v=cf624135"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -136,7 +136,7 @@
   
   
   
-    <p class="title logo__title">python_package 0.1.dev1+g92e9f3717 documentation</p>
+    <p class="title logo__title">python_package 0.1.dev1+gdf1a7ea52 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item"><ul class="navbar-icon-links"
@@ -413,7 +413,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="design-descriptions-and-details-for-the-python-package-template">
+  <!-- 
+See on how to use include:
+https://myst-parser.readthedocs.io/en/latest/faq/index.html#include-a-file-from-outside-the-docs-folder-like-readme-md 
+-->
+<section class="tex2jax_ignore mathjax_ignore" id="design-descriptions-and-details-for-the-python-package-template">
 <h1>Design descriptions and details for the Python package template<a class="headerlink" href="#design-descriptions-and-details-for-the-python-package-template" title="Link to this heading">#</a></h1>
 <blockquote>
 <div><p>Author: Henry Webel</p>
@@ -454,20 +458,20 @@ is the purpose of each folder or file:</p>
 </section>
 <section id="core-packaging-files">
 <h2>Core packaging files<a class="headerlink" href="#core-packaging-files" title="Link to this heading">#</a></h2>
-<p>We will first look at <a class="reference internal" href="#pyproject.toml"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a> and its relation to the
-<a class="reference internal" href="#src"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">src</span></code></span></a> directory. The
-<a class="reference internal" href="#pyproject.toml"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a> file is the main configuration file for the Python package
+<p>We will first look at <a class="reference download internal" download="" href="_downloads/079962c730e6e61f3f9971f670e9cf70/pyproject.toml"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a> and its relation to the
+<code class="docutils literal notranslate"><span class="pre">src</span></code> directory. The
+<a class="reference download internal" download="" href="_downloads/079962c730e6e61f3f9971f670e9cf70/pyproject.toml"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a> file is the main configuration file for the Python package
 and is used to specify the package metadata, dependencies, build tools and configurations.
-The <a class="reference internal" href="#src"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">src</span></code></span></a> folder stores the actual source code of the package, where the package itself is
-the subdirectories of the <a class="reference internal" href="#src"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">src</span></code></span></a> directory. The  (e.g. <code class="docutils literal notranslate"><span class="pre">src/python_package</span></code>).</p>
+The <code class="docutils literal notranslate"><span class="pre">src</span></code> folder stores the actual source code of the package, where the package itself is
+the subdirectories of the <code class="docutils literal notranslate"><span class="pre">src</span></code> directory. The  (e.g. <code class="docutils literal notranslate"><span class="pre">src/python_package</span></code>).</p>
 <details>
 <summary>About <code>setup.py</code> and <code>setup.cfg</code> configuration files</summary>
-<p>The <a class="reference internal" href="#setup.py"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">setup.py</span></code></span></a> file is an artefact for backward compatibility and should not
-be changed.  Everything that used to be in <a class="reference internal" href="#setup.py"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">setup.py</span></code></span></a> or
-<a class="reference internal" href="#setup.cfg"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code></span></a> is now largely in <a class="reference internal" href="#pyproject.toml"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a>.
+<p>The <a class="reference download internal" download="" href="_downloads/10741c54301aa680a80fa6b2a992452e/setup.py"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">setup.py</span></code></span></a> file is an artefact for backward compatibility and should not
+be changed.  Everything that used to be in <a class="reference download internal" download="" href="_downloads/10741c54301aa680a80fa6b2a992452e/setup.py"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">setup.py</span></code></span></a> or
+<a class="reference download internal" download="" href="_downloads/419cb15b3afb7ac82692c7560276d74f/setup.cfg"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code></span></a> is now largely in <a class="reference download internal" download="" href="_downloads/079962c730e6e61f3f9971f670e9cf70/pyproject.toml"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a>.
 The notable exception would be the desired maximum line length in <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> for
 the tool <a class="reference external" href="https://flake8.pycqa.org/" rel="noreferrer" target="_blank"><code class="docutils literal notranslate"><span class="pre">flake8</span></code></a>, which does not yet supported
-<a class="reference internal" href="#pyproject.toml"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a> configuration. As we use <code class="docutils literal notranslate"><span class="pre">ruff</span></code> as linter,
+<a class="reference download internal" download="" href="_downloads/079962c730e6e61f3f9971f670e9cf70/pyproject.toml"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a> configuration. As we use <code class="docutils literal notranslate"><span class="pre">ruff</span></code> as linter,
 we left it empty, but in case you want to use <code class="docutils literal notranslate"><span class="pre">flake8</span></code>, you can add:</p>
 <div class="highlight-INI notranslate"><div class="highlight"><pre><span></span><span class="c1">; setup.cfg</span>
 <span class="k">[flake8]</span>
@@ -520,13 +524,13 @@ specified in via a <code class="docutils literal notranslate"><span class="pre">
 </div>
 <p>means that the version is loaded dynamically using the extension
 <a class="reference external" href="https://setuptools-scm.readthedocs.io/" rel="noreferrer" target="_blank">setuptools_scm</a>
-we list under the <code class="docutils literal notranslate"><span class="pre">[build-system]</span></code> section in <a class="reference internal" href="#pyproject.toml"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a>.
+we list under the <code class="docutils literal notranslate"><span class="pre">[build-system]</span></code> section in <a class="reference download internal" download="" href="_downloads/079962c730e6e61f3f9971f670e9cf70/pyproject.toml"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a>.
 This is done to avoid having to manually update the version and integrate with automatic
 versioning through releases on GitHub. It also
 ensures that each commit has a unique version number, which is useful for attributing
 errors to specific non-released versions. The dynamic version is picked up in the
 <code class="docutils literal notranslate"><span class="pre">__version__</span></code> variable in the <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code> file of the package, which is located in the
-<a class="reference internal" href="#src/python_package"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">src/python_package</span></code></span></a> directory.</p>
+<code class="docutils literal notranslate"><span class="pre">src/python_package</span></code> directory.</p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build-system]</span>
 <span class="n">build-backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;setuptools.build_meta&quot;</span>
 <span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;setuptools&gt;=64&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;setuptools_scm&gt;=8&quot;</span><span class="p">]</span>
@@ -578,14 +582,14 @@ in the same project under the <code class="docutils literal notranslate"><span c
 </pre></div>
 </div>
 <p>So you will need to rename the <code class="docutils literal notranslate"><span class="pre">python_package</span></code> directory to your package name,
-e.g. <code class="docutils literal notranslate"><span class="pre">my_package</span></code> and specify the package name in the <a class="reference internal" href="#pyproject.toml"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a> file
+e.g. <code class="docutils literal notranslate"><span class="pre">my_package</span></code> and specify the package name in the <a class="reference download internal" download="" href="_downloads/079962c730e6e61f3f9971f670e9cf70/pyproject.toml"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a> file
 under the <code class="docutils literal notranslate"><span class="pre">[project]</span></code> section:</p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_package&quot;</span>
 </pre></div>
 </div>
 <p>Strictly speaking you can give different names in both places, but this will only confuse
 potential users. Think of <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> for an example of a package that uses a different
-name in the <a class="reference internal" href="#pyproject.toml"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a> file and the source code directory name,
+name in the <a class="reference download internal" download="" href="_downloads/079962c730e6e61f3f9971f670e9cf70/pyproject.toml"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a> file and the source code directory name,
 leading to the <code class="docutils literal notranslate"><span class="pre">sklearn</span></code> package name when imported.</p>
 </section>
 <section id="documentation">
@@ -593,8 +597,8 @@ leading to the <code class="docutils literal notranslate"><span class="pre">skle
 <p>The documentation is created using <a class="reference external" href="https://www.sphinx-doc.org/en/master/" rel="noreferrer" target="_blank">Sphinx</a>,
 which is common for Python documentation. It relies additionally on several extensions
 enabling the use of <code class="docutils literal notranslate"><span class="pre">markdown</span></code> and <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> notebooks.</p>
-<p>The documentation is located in the <a class="reference internal" href="#docs"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">docs</span></code></span></a> directory. Sphinx is configured via
-the <a class="reference internal" href="#docs/conf.py"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">conf.py</span></code></span></a> file, where you can specify the extension you want:</p>
+<p>The documentation is located in the <code class="docutils literal notranslate"><span class="pre">docs</span></code> directory. Sphinx is configured via
+the <a class="reference download internal" download="" href="_downloads/fb0d0d7ff27f33697ba3b787ec894677/conf.py"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">conf.py</span></code></span></a> file, where you can specify the extension you want:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># in docs/conf.py</span>
 
 <span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
@@ -626,7 +630,7 @@ the <a class="reference internal" href="#docs/conf.py"><span class="xref myst"><
 </div>
 <section id="required-changes-in-conf-py">
 <h3>Required changes in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code><a class="headerlink" href="#required-changes-in-conf-py" title="Link to this heading">#</a></h3>
-<p>The required changes in <a class="reference internal" href="#docs/conf.py"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">conf.py</span></code></span></a> are at the following places:</p>
+<p>The required changes in <a class="reference download internal" download="" href="_downloads/fb0d0d7ff27f33697ba3b787ec894677/conf.py"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">conf.py</span></code></span></a> are at the following places:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># in docs/conf.py</span>
 
 <span class="n">project</span> <span class="o">=</span> <span class="s2">&quot;python_package&quot;</span>
@@ -660,8 +664,8 @@ package on the fly. See the Read The Docs section below for more details.</p>
 <h3>Theme, autodoc and intersphinx<a class="headerlink" href="#theme-autodoc-and-intersphinx" title="Link to this heading">#</a></h3>
 <p>We build the documentation based on the template
 <a class="reference external" href="https://sphinx-book-theme.readthedocs.io" rel="noreferrer" target="_blank">sphinx_book_theme</a>, which is set in the
-<a class="reference internal" href="#docs/conf.py"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">conf.py</span></code></span></a> file and parts of our docs requirements in
-<a class="reference internal" href="#pyproject.toml"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a>:</p>
+<a class="reference download internal" download="" href="_downloads/fb0d0d7ff27f33697ba3b787ec894677/conf.py"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">conf.py</span></code></span></a> file and parts of our docs requirements in
+<a class="reference download internal" download="" href="_downloads/079962c730e6e61f3f9971f670e9cf70/pyproject.toml"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code></span></a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;sphinx_book_theme&quot;</span>
 </pre></div>
 </div>
@@ -692,8 +696,8 @@ like <code class="docutils literal notranslate"><span class="pre">pandas</span><
 <section id="building-the-documentation-locally-with-integration-tests">
 <h3>Building the documentation locally (with integration tests)<a class="headerlink" href="#building-the-documentation-locally-with-integration-tests" title="Link to this heading">#</a></h3>
 <p>To build the documentation locally, you can follow the instructions in the
-<a class="reference internal" href="#docs/README.md"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">docs/README.md</span></code></span></a>, which you should also update with your name changes.
-In short, you can run the following commands in the <a class="reference internal" href="#docs"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">docs</span></code></span></a> directory:</p>
+<a class="reference internal" href="README.html"><span class="std std-doc"><code class="docutils literal notranslate"><span class="pre">docs/README.md</span></code></span></a>, which you should also update with your name changes.
+In short, you can run the following commands in the <code class="docutils literal notranslate"><span class="pre">docs</span></code> directory:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># in root of the project</span>
 pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;.[docs]&quot;</span>
 <span class="nb">cd</span><span class="w"> </span>docs<span class="w"> </span><span class="c1"># change to docs directory</span>
@@ -702,7 +706,7 @@ sphinx-build<span class="w"> </span>-n<span class="w"> </span>-W<span class="w">
 </pre></div>
 </div>
 <p>this will create a <code class="docutils literal notranslate"><span class="pre">reference</span></code> directory with the API documentation of the Python package
-<code class="docutils literal notranslate"><span class="pre">python_package</span></code>, a <code class="docutils literal notranslate"><span class="pre">jupyter_execute</span></code> for the tutorial in <a class="reference internal" href="#docs/tutorial"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">docs/tutorial</span></code></span></a>
+<code class="docutils literal notranslate"><span class="pre">python_package</span></code>, a <code class="docutils literal notranslate"><span class="pre">jupyter_execute</span></code> for the tutorial in <code class="docutils literal notranslate"><span class="pre">docs/tutorial</span></code>
 and a <code class="docutils literal notranslate"><span class="pre">_build</span></code> directory with an HTML version of the documentation. You can open the
 <code class="docutils literal notranslate"><span class="pre">_build/index.html</span></code> file in your browser to view the documentation built locally.</p>
 <p>The tutorial related configuration in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> is the following, specifying that
@@ -733,15 +737,15 @@ You have to keep the files in sync using:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupytext<span class="w"> </span>--sync<span class="w"> </span>docs/tutorial/*.ipynb
 </pre></div>
 </div>
-<p>The <a class="reference internal" href="#docs/tutorial/.jupytext"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">docs/tutorial/.jupytext</span></code></span></a> configuration sets the default
+<p>The <a class="reference download internal" download="" href="_downloads/eedd55a100b9afd47e9375ee323a2459/.jupytext"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">docs/tutorial/.jupytext</span></code></span></a> configuration sets the default
 format to <code class="docutils literal notranslate"><span class="pre">py:percent</span></code> and automatically allows syncing of new notebooks.</p>
 </section>
 <section id="read-the-docs">
 <h3>Read The Docs<a class="headerlink" href="#read-the-docs" title="Link to this heading">#</a></h3>
 <p>To build the documentation on Read The Docs, you need to create a file called
-<a class="reference internal" href="#.readthedocs.yaml"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code></span></a>, which is located in the root of the project and
+<a class="reference download internal" download="" href="_downloads/bd5805a11887210568b15f0b7cb012db/.readthedocs.yaml"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code></span></a>, which is located in the root of the project and
 specifies which dependencies are needed. The core is the following specifying where the
-<a class="reference internal" href="#docs/conf.py"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">conf.py</span></code></span></a> file is and from where to install the required dependencies:</p>
+<a class="reference download internal" download="" href="_downloads/fb0d0d7ff27f33697ba3b787ec894677/conf.py"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">conf.py</span></code></span></a> file is and from where to install the required dependencies:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build documentation in the &quot;docs/&quot; directory with Sphinx</span>
 <span class="nt">sphinx</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/conf.py</span>
@@ -759,7 +763,7 @@ specifies which dependencies are needed. The core is the following specifying wh
 by the service. I recommend to activate builds for Pull Requests, so that
 the documentation is built for each PR and you can see if the documentation is gradually
 breaking, i.e. your integration test using the notebooks in
-<a class="reference internal" href="#docs/tutorial"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">docs/tutorial</span></code></span></a> fail. See their documentation
+<code class="docutils literal notranslate"><span class="pre">docs/tutorial</span></code> fail. See their documentation
 <a class="reference external" href="https://docs.readthedocs.com/platform/stable/intro/add-project.html" rel="noreferrer" target="_blank">on adding a project</a>
 for instructions.</p>
 </section>
@@ -786,7 +790,7 @@ pytest<span class="w"> </span>tests
 <section id="github-actions">
 <h2>GitHub Actions<a class="headerlink" href="#github-actions" title="Link to this heading">#</a></h2>
 <p>We run these checks also on GitHub using GitHub Actions. The configuration
-for the actions is located in the <a class="reference internal" href="#.github/workflows"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">.github/workflows</span></code></span></a> directory
+for the actions is located in the <code class="docutils literal notranslate"><span class="pre">.github/workflows</span></code> directory
 and is specified in the <code class="docutils literal notranslate"><span class="pre">cdci.yml</span></code> file. See the biosustain dsp tutorial on GitHub Actions
 for more details (or any other resource you find):
 <a class="reference external" href="https://github.com/biosustain/dsp_actions_tutorial" rel="noreferrer" target="_blank">biosustain/dsp_actions_tutorial</a></p>
