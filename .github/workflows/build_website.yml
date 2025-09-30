@@ -29,7 +29,7 @@ jobs:
         run: |
           cd docs
           sphinx-apidoc --force --implicit-namespaces --module-first -o reference ../src/python_package
-          sphinx-build -n --keep-going -b html .  _build
+          sphinx-build --nitpicky --fail-on-warning --keep-going -b html .  _build
 
       - name: Save to gh-pages
         # # if: ${{ github.ref == 'refs/heads/main' }}
