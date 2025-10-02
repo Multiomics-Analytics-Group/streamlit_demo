@@ -3,6 +3,21 @@ from time import sleep
 import pandas as pd
 import streamlit as st
 
+
+@st.cache_data
+def cache_sleep(i: int, seconds: float = 0.1):
+    sleep(seconds)
+    return None
+
+# ! Fragments do not trigger a full app rerun, so the fragment will updated after 
+# ! the entire code is run
+# @st.fragment
+def render_button():
+    with st.echo():
+        st.button("Click me")
+        with st.spinner("Loading data ..."):
+            sleep(5)
+
 st.title("Streamlit App Example")
 
 st.write(
@@ -18,10 +33,8 @@ Streamlit runs from top to bottom, executing all code on each interaction.
 """
 )
 
-with st.echo():
-    st.button("Click me")
-    with st.spinner("Loading data ..."):
-        sleep(5)
+render_button()
+
 st.write(
     "This takes a while to load...simulating a heavy computation or IO process. But it works!"
 )
@@ -55,4 +68,4 @@ with st.echo():
 
     for i in range(100):
         my_bar.progress(i + 1, text=progress_text)
-        sleep(0.1)
+        cache_sleep(i)
