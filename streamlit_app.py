@@ -9,7 +9,8 @@ def cache_sleep(i: int, seconds: float = 0.1):
     sleep(seconds)
     return None
 
-# ! Fragments do not trigger a full app rerun, so the fragment will updated after 
+
+# ! Fragments do not trigger a full app rerun, so the fragment will updated after
 # ! the entire code is run
 # @st.fragment
 def render_button():
@@ -17,6 +18,7 @@ def render_button():
         st.button("Click me")
         with st.spinner("Loading data ..."):
             sleep(5)
+
 
 st.title("Streamlit App Example")
 
@@ -36,7 +38,8 @@ Streamlit runs from top to bottom, executing all code on each interaction.
 render_button()
 
 st.write(
-    "This takes a while to load...simulating a heavy computation or IO process. But it works!"
+    "This takes a while to load...simulating a heavy computation or IO process. "
+    "But it works!"
 )
 
 sleep(2)
